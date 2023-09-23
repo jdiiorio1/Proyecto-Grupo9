@@ -28,8 +28,8 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main2);
-        ingresar = findViewById(R.id.bt_ingresar2);
+        setContentView(R.layout.activity_main);
+        ingresar = findViewById(R.id.bt_ingresar);
         ingresar.setOnClickListener(ingresarListener);
 
     }
@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
            // Intent intent = new Intent(MainActivity.this, Bienvenida.class);
             Intent intentIngresar = new Intent(MainActivity.this, Bienvenida.class);
             startActivity(intentIngresar);
-            MainActivity.this.finish();
+            //MainActivity.this.finish();
         }
     };
 
