@@ -28,20 +28,20 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        ingresar = findViewById(R.id.bt_ingresar);
+        setContentView(R.layout.activity_main2);
+        ingresar = findViewById(R.id.bt_ingresar2);
         ingresar.setOnClickListener(ingresarListener);
 
     }
     public View.OnClickListener ingresarListener = new View.OnClickListener() {
         @Override
         public void onClick(View view) {
-            Toast.makeText(MainActivity.this,"estoy intentando que funcione", Toast.LENGTH_LONG).show();
+            Toast.makeText(MainActivity.this,"estoy intentando que funcione y funcionó", Toast.LENGTH_LONG).show();
 
            // Intent intent = new Intent(MainActivity.this, Bienvenida.class);
             Intent intentIngresar = new Intent(MainActivity.this, Bienvenida.class);
             startActivity(intentIngresar);
-            //MainActivity.this.finish();
+            MainActivity.this.finish();
         }
     };
 
